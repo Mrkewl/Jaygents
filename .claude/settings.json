@@ -1,8 +1,24 @@
 {
+  "statusLine": {
+    "type": "command",
+    "command": "printf '\\033[32m● harness\\033[0m'"
+  },
   "permissions": {
     "allow": [
       "WebFetch",
       "Bash"
+    ]
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/session-start.sh"
+          }
+        ]
+      }
     ]
   }
 }
