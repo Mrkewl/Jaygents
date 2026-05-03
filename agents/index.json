@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "agents": [
+    {
+      "name": "team-lead",
+      "file": "agents/orchestration/team-lead.md",
+      "domain": "software-engineering",
+      "tags": ["orchestration", "planning", "decomposition", "multi-agent"],
+      "model": "opus",
+      "quality": "untested",
+      "description": "Decomposes work, assigns tasks to subagents, enforces file ownership and status protocol"
+    },
+    {
+      "name": "architect",
+      "file": "agents/engineering/architect.md",
+      "domain": "software-engineering",
+      "tags": ["architecture", "system-design", "api-design", "data-modeling"],
+      "model": "opus",
+      "quality": "untested",
+      "description": "Owns system boundaries, ADRs, schema migrations, and decisions that are expensive to reverse"
+    },
+    {
+      "name": "backend-engineer",
+      "file": "agents/engineering/backend-engineer.md",
+      "domain": "software-engineering",
+      "tags": ["backend", "api", "koa", "typescript", "database", "testing"],
+      "model": "sonnet",
+      "quality": "untested",
+      "description": "Implements Koa endpoints, TypeScript service logic, migrations, and Jest tests"
+    },
+    {
+      "name": "code-reviewer",
+      "file": "agents/review/code-reviewer.md",
+      "domain": "software-engineering",
+      "tags": ["review", "quality", "security", "typescript", "testing"],
+      "model": "sonnet",
+      "quality": "untested",
+      "description": "Runs spec compliance gate first, then code quality gate. Returns APPROVED / APPROVED_WITH_NOTES / CHANGES_REQUIRED"
+    }
+  ]
+}
