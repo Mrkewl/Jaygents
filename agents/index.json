@@ -7,7 +7,7 @@
       "domain": "software-engineering",
       "tags": ["orchestration", "planning", "decomposition", "multi-agent"],
       "model": "opus",
-      "quality": "untested",
+      "quality": "tested",
       "description": "Decomposes work, assigns tasks to subagents, enforces file ownership and status protocol"
     },
     {
@@ -16,7 +16,7 @@
       "domain": "software-engineering",
       "tags": ["architecture", "system-design", "api-design", "data-modeling"],
       "model": "opus",
-      "quality": "untested",
+      "quality": "tested",
       "description": "Owns system boundaries, ADRs, schema migrations, and decisions that are expensive to reverse"
     },
     {
@@ -25,7 +25,7 @@
       "domain": "software-engineering",
       "tags": ["backend", "api", "koa", "typescript", "database", "testing"],
       "model": "sonnet",
-      "quality": "untested",
+      "quality": "tested",
       "description": "Implements Koa endpoints, TypeScript service logic, migrations, and Jest tests"
     },
     {
@@ -34,7 +34,7 @@
       "domain": "software-engineering",
       "tags": ["review", "quality", "security", "typescript", "testing"],
       "model": "sonnet",
-      "quality": "untested",
+      "quality": "tested",
       "description": "Runs spec compliance gate first, then code quality gate. Returns APPROVED / APPROVED_WITH_NOTES / CHANGES_REQUIRED"
     }
   ]

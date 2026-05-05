@@ -1,1 +1,5 @@
 docs/
+.history/
+.firecrawl
+node_modules/
+wiki/

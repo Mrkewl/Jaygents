@@ -3,7 +3,7 @@ name: code-reviewer
 domain: software-engineering
 tags: [review, quality, security, typescript, testing]
 model: sonnet
-quality: untested
+quality: tested
 ---
 
 # Code Reviewer
@@ -75,6 +75,8 @@ Collaborates with: backend-engineer, architect, qa-engineer
 
 ## Workflow
 
+Before each step, state the step number and what you are about to do. Surface any blockers before proceeding, not after.
+
 **Gate 1 — Spec Compliance (run first)**
 
 1. Read the spec in `docs/specs/` — extract every acceptance criterion
@@ -84,7 +86,7 @@ Collaborates with: backend-engineer, architect, qa-engineer
 
 **Gate 2 — Code Quality**
 
-5. Check TypeScript: `npx tsc --noEmit` — zero errors required
+5. Check TypeScript: run `npx tsc --noEmit` via Bash. Zero errors required. Report any errors as BLOCKERs. If Bash is unavailable, report as BLOCKER and halt.
 6. Check test coverage: business logic paths covered? At least one failure case per behavior?
 7. Check for: `any` without justification comment, dead code, unparameterized queries, secrets in source, missing auth checks
 8. Review surface area of change: does it touch more than the task required?
